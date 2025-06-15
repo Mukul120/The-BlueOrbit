@@ -20,23 +20,28 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-email`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-email`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
-    alert(data.message);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      technology: "",
-      visa: "",
-      location: "",
-      message: "",
-    });
+      const data = await res.json();
+      alert(data.message);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        technology: "",
+        visa: "",
+        location: "",
+        message: "",
+      });
+
+    } catch (error) {
+      alert(error)
+    }
   };
 
   return (
