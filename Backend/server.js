@@ -7,8 +7,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middlewares
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+    origin: ["https://the-blueorbit.onrender.com"],
+    credentials: true
+}));
+app.use(express.json({ limit: "100mb" }));
 
 // POST route to handle form submission
 app.post("/api/send-email", async (req, res) => {
@@ -43,9 +46,14 @@ app.post("/api/send-email", async (req, res) => {
         };
 
 
-        await transporter.sendMail(mailOptions);
-        console.log("email sent ");
-        res.status(200).json({ message: "Email sent successfully!" });
+        try {
+            await transporter.sendMail(mailOptions);
+            res.status(200).json({ message: "Email sent successfully!" });
+        } catch (error) {
+            console.error("❌ Email failed:", error);
+            res.status(500).json({ message: "Email failed", error: error.message });
+        }
+
     } catch (error) {
         console.error("Error sending email:", error);
         res.status(500).json({ message: "Failed to send email." });

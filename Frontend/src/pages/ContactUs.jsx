@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import Footer from "../components/Footer";
+import axios from "axios"
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,14 +23,8 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-email`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      alert(data.message);
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/send-email`, formData)
+      alert(res.data.message);
       setFormData({
         name: "",
         email: "",
