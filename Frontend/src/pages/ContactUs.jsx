@@ -27,22 +27,25 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
+      let data;
+      try {
+        data = await res.json(); // ✅ only if backend returns valid JSON
+      } catch (jsonErr) {
+        const raw = await res.text(); // ❌ This is what crashed earlier
+        console.error("⚠️ Invalid JSON response:", raw);
+        alert("Server returned an invalid response.");
+        return;
+      }
+
       alert(data.message);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        technology: "",
-        visa: "",
-        location: "",
-        message: "",
-      });
+      setFormData({ ...emptyFields }); // reset
 
     } catch (error) {
-      alert(error)
+      console.error("❌ Network or server error:", error);
+      alert("Something went wrong. Please try again later.");
     }
   };
+
 
   return (
     <>
