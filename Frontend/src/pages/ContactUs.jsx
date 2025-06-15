@@ -42,7 +42,7 @@ const ContactForm = () => {
 
     } catch (error) {
       console.error("❌ Network or server error:", error);
-      alert("Something went wrong. Please try again later.");
+      alert("Something went wrong. Please try again later.",error);
     }
   };
 
