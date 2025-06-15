@@ -20,11 +20,12 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:5000/api/send-email", {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/send-email`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
+
     const data = await res.json();
     alert(data.message);
     setFormData({
