@@ -108,7 +108,7 @@ const Footer = () => {
                 whileInView="visible"
                 variants={fadeInUp}
                 viewport={{ once: true }}
-                className="flex justify-center items-start md:items-center md:justify-end absolute md:bottom-17  md:right-1/2 bottom-25 left-40"
+                className="flex justify-center items-start md:items-center md:justify-end absolute md:bottom-17  md:right-1/2 bottom-25 left-44"
             >
                 <button
                     onClick={scrollToTop}
