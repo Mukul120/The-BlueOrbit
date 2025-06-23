@@ -6,7 +6,7 @@ const JobApp = () => {
       {/* Image Section */}
       <div className="w-full ">
         <img
-          src="./about.jpeg"
+          src="./images/pd.jpeg"
           alt="Resume"
           className="w-full h-64 md:h-96 object-cover"
         />

@@ -6,9 +6,9 @@ const Interview = () => {
       {/* Image Section */}
       <div className="w-full ">
         <img
-          src="./about.jpeg"
-          alt="Resume"
-          className="w-full h-64 md:h-96 object-cover"
+          src="./images/jd.jpeg"
+          alt="interview Preparation"
+          className="w-full h-64 md:h-96 object-cover object-center"
         />
       </div>
 

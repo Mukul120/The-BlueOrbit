@@ -563,57 +563,65 @@ const Home = () => {
         </motion.div>
 
         {/* Table */}
-        <div className="bg-white rounded-b-lg shadow-2xl overflow-hidden">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-blue-50 border-b-2 border-blue-200">
-                <th className="text-left py-4 px-6 text-blue-800 font-semibold text-lg">Role</th>
-                <th className="text-left py-4 px-6 text-blue-800 font-semibold text-lg">Name</th>
-                <th className="text-left py-4 px-6 text-blue-800 font-semibold text-lg">Expertise & Vision</th>
-              </tr>
-            </thead>
-            <tbody>
-              {teamMembers.map((member, index) => (
-                <tr
-                  key={member.id}
-                  className={`border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'
-                    }`}
-                >
-                  <td className="py-6 px-6">
-                    <motion.div
-                      custom={2}
-                      initial="hidden"
-                      whileInView="visible"
-                      variants={fadeInUp}
-                      viewport={{ once: true }} className="flex items-center">
-                      <div className="w-2 h-12 bg-blue-600 rounded-full mr-4"></div>
-                      <span className="text-blue-600 font-medium text-lg">{member.role}</span>
-                    </motion.div>
-                  </td>
-                  <td className="py-6 px-6">
-                    <motion.div
-                      custom={2.3}
-                      initial="hidden"
-                      whileInView="visible"
-                      variants={fadeInUp}
-                      viewport={{ once: true }} className="text-gray-900 font-bold text-xl">{member.name}</motion.div>
-                  </td>
-                  <td className="py-6 px-6">
-                    <motion.div
-                      custom={2.4}
-                      initial="hidden"
-                      whileInView="visible"
-                      variants={fadeInUp}
-                      viewport={{ once: true }} className="space-y-2">
-                      <p className="text-gray-700 text-base leading-relaxed">{member.description1}</p>
-                      <p className="text-gray-600 text-base leading-relaxed">{member.description2}</p>
-                    </motion.div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+     <div className="bg-white rounded-b-lg shadow-2xl overflow-x-auto">
+  <table className="w-full min-w-[600px]">
+    <thead>
+      <tr className="bg-blue-50 border-b-2 border-blue-200">
+        <th className="text-left py-4 px-4 sm:px-6 text-blue-800 font-semibold text-base sm:text-lg">Role</th>
+        <th className="text-left py-4 px-4 sm:px-6 text-blue-800 font-semibold text-base sm:text-lg">Name</th>
+        <th className="text-left py-4 px-4 sm:px-6 text-blue-800 font-semibold text-base sm:text-lg">Expertise & Vision</th>
+      </tr>
+    </thead>
+    <tbody>
+      {teamMembers.map((member, index) => (
+        <tr
+          key={member.id}
+          className={`border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
+        >
+          <td className="py-4 px-4 sm:px-6">
+            <motion.div
+              custom={2}
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true }}
+              className="flex items-center"
+            >
+              <div className="w-2 h-10 bg-blue-600 rounded-full mr-3 sm:mr-4"></div>
+              <span className="text-blue-600 font-medium text-sm sm:text-base">{member.role}</span>
+            </motion.div>
+          </td>
+          <td className="py-4 px-4 sm:px-6">
+            <motion.div
+              custom={2.3}
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true }}
+              className="text-gray-900 font-bold text-base sm:text-xl"
+            >
+              {member.name}
+            </motion.div>
+          </td>
+          <td className="py-4 px-4 sm:px-6">
+            <motion.div
+              custom={2.4}
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true }}
+              className="space-y-2"
+            >
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">{member.description1}</p>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{member.description2}</p>
+            </motion.div>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
 
         {/* Footer Stats */}
         {/* <div className="mt-6 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg p-4">

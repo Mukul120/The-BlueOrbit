@@ -7,10 +7,10 @@ const Layout = () => {
     return (
         <div className="flex flex-col h-screen relative">
             <Header />
-            <main className="flex-grow">
+            <main className="flex-grow pt-1">
                 <Outlet />
             </main>
-            {/* <Footer /> */}
+
         </div>
     );
 };

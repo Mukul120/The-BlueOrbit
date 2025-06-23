@@ -112,7 +112,7 @@ const Services = () => {
     }
   };
 
-  
+
 
   return (
     <div className='w-full h-screen'>
@@ -146,7 +146,7 @@ const Services = () => {
           variants={fadeInUp}
           viewport={{ once: true }} className="w-full h-full flex gap-5 justify-center items-center  flex-wrap">
           {services.map((el, id) => (
-            <div key={id} className="w-80 h-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-blue-600 hover:text-white rounded-xl">
+            <Link to={"/specialist"} key={id} className="w-80 h-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-blue-600 hover:text-white rounded-xl">
               <div className="size-65 p-3">
                 <div className="w-20 h-20 flex justify-start items-center">
                   {el.logo}
@@ -157,7 +157,7 @@ const Services = () => {
                   Read More <span><ArrowRightToLine /></span>
                 </button>
               </div>
-            </div>
+            </Link>
 
 
           ))}

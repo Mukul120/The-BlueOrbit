@@ -110,7 +110,7 @@ const Specialist = () => {
       <div className="w-full h-auto mt-20">
         <div className="w-full flex flex-col md:flex-row gap-10 justify-center items-center">
           <img src="./details.jpg" alt="" className='object-cover w-[400px]' />
-          <div>
+          <div className='px-5'>
             <h1 className='text-3xl font-semibold mb-1'>Benefits With Our Service</h1>
             <p className='text-lg mb-6'>Highlight your strengths and target the right employers.</p>
             <span className='flex gap-2 items-center mb-2'><CircleCheck className='text-blue-700' /> Get Matched with Perfect Job Opportunities</span>

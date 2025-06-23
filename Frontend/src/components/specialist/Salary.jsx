@@ -6,9 +6,9 @@ const Salary = () => {
       {/* Image Section */}
       <div className="w-full ">
         <img
-          src="./about.jpeg"
+          src="./images/salary.jpeg"
           alt="Resume"
-          className="w-full h-64 md:h-96 object-cover"
+          className="w-full h-64 md:h-96 object-cover object-top"
         />
       </div>
 
