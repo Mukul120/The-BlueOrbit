@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const DemandedRoles = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full mt-20">
       {/* Hero Section */}
       <div
         className="w-full h-[50vh] md:h-[70vh] bg-cover bg-center relative flex items-center justify-center"
