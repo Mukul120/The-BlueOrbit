@@ -729,9 +729,9 @@ const Home = () => {
               variants={fadeInUp}
               viewport={{ once: true }} className="mt-12 text-center">
               <p className="text-gray-600 mb-4">Still have questions?</p>
-              <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <Link to="/contact" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Contact Support
-              </button>
+              </Link>
             </motion.div>
           </div>
 
