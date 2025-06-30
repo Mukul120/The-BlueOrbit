@@ -13,8 +13,8 @@ const Header = () => {
     return (
         <nav className="bg-white text-black md:px-20 px-7 fixed w-full  top-0 z-50 shadow-2xl">
             <div className="flex items-center justify-between">
-                <Link to={"/"} className="w-28">
-                    <img src="./logo.png" alt="" className='md:size-25 size-20 ' />
+                <Link to={"/"} className="w-20">
+                    <img src="./logo.png" alt="" className='md:w-24 w-20 ' />
                 </Link>
 
                 {/* Desktop nav */}
