@@ -179,14 +179,14 @@ const Home = () => {
     {
       id: 2,
       role: "Co-founder",
-      name: "co founder",
+      name: "Mohil vakshya, Vivek Gajera",
       description1: "Empowering teams, crafting business success.",
       description2: "Inspiring excellence, fostering team empowerment."
     },
     {
       id: 3,
       role: "Managing Director",
-      name: "director",
+      name: "Harshil Pethani",
       description1: "Guiding growth, delivering exceptional results.",
       description2: "Leading operations, ensuring business excellence."
     }
@@ -198,8 +198,8 @@ const Home = () => {
   const accordionData = [
     {
       id: 1,
-      title: "What are the benefits of using The BlueOrbit for my us it job Search?",
-      content: "The BlueOrbit offers a comprehensive suite of services designed to optimize your job search and maximize your success. We provide everything from resume and interview prep to strategic job application and immigration guidance (if applicable). Our dedicated team of experts will help you stand out from the crowd and land your dream IT job in the USA."
+      title: "What are the benefits of using The Stake-hawk for my us it job Search?",
+      content: "The Stake-hawk offers a comprehensive suite of services designed to optimize your job search and maximize your success. We provide everything from resume and interview prep to strategic job application and immigration guidance (if applicable). Our dedicated team of experts will help you stand out from the crowd and land your dream IT job in the USA."
     },
     {
       id: 2,
@@ -306,9 +306,9 @@ const Home = () => {
               variants={fadeInUp}
               viewport={{ once: true }}
               className="w-full h-full flex flex-col justify-center items-center gap-7">
-              <p className='text-xl text-blue-700 font-semibold'>ABOUT THE BLUEORBIT</p>
-              <p className='text-4xl font-bold '>Secure your dream IT job in the USA with <span className='text-blue-700'>The BlueOrbit</span></p>
-              <p className='text-lg font-light'>Elevate your profile and land your dream IT role with our comprehensive services with the blueorbit</p>
+              <p className='text-xl text-blue-700 font-semibold'>ABOUT The Stake-hawk</p>
+              <p className='text-4xl font-bold '>Secure your dream IT job in the USA with <span className='text-blue-700'>The Stake-hawk</span></p>
+              <p className='text-lg font-light'>Elevate your profile and land your dream IT role with our comprehensive services with The Stake-hawk</p>
             </motion.div>
 
             <motion.div
@@ -566,7 +566,7 @@ const Home = () => {
               </div>
 
               {/* Main Title */}
-              <h1 className="text-white text-4xl font-bold mb-2">The Minds Behind The BlueOrbit</h1>
+              <h1 className="text-white text-4xl font-bold mb-2">The Minds Behind The Stake-hawk</h1>
 
               {/* Decorative Elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 opacity-10 rounded-full transform translate-x-32 -translate-y-32"></div>

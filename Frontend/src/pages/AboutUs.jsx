@@ -94,11 +94,11 @@ const members = [
     name: "Parth Raval",
     role: "Founder"
   },
-  {
-    img: "./mn.jpeg",
-    name: "Parth Raval",
-    role: "Founder"
-  },
+  // {
+  //   img: "./mn.jpeg",
+  //   name: "Parth Raval",
+  //   role: "Founder"
+  // },
 ]
 
 
@@ -168,12 +168,12 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 className="text-center lg:text-left"
               >
-                <p className="text-blue-700 font-semibold text-xl">ABOUT THE BLUEORBIT</p>
+                <p className="text-blue-700 font-semibold text-xl">ABOUT The Stake-hawk</p>
                 <h2 className="text-3xl md:text-4xl font-bold leading-snug mt-2">
-                  Secure your dream IT job in the USA with <span className="text-blue-700">The BlueOrbit</span>
+                  Secure your dream IT job in the USA with <span className="text-blue-700">The Stake-hawk</span>
                 </h2>
                 <p className="text-gray-700 text-base mt-3">
-                  Elevate your profile and land your dream IT role with our comprehensive services at The BlueOrbit.
+                  Elevate your profile and land your dream IT role with our comprehensive services at The Stake-hawk.
                 </p>
               </motion.div>
 
@@ -292,7 +292,7 @@ const AboutUs = () => {
           <div className="w-full mb-10 ">
             <div className="w-full flex flex-col px-20 gap-5">
               <span className='uppercase text-blue-700'>team member</span>
-              <span className='uppercase md:text-4xl text-2xl font-bold '>The Minds Behind The BlueOrbit</span>
+              <span className='uppercase md:text-4xl text-2xl font-bold '>The Minds Behind The Stake-hawk</span>
             </div>
             <div className="w-full h-full   flex justify-evenly  items-center gap-5 px-10">
               {members.map((el, id) => (

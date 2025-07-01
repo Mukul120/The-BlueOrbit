@@ -33,7 +33,7 @@ const Footer = () => {
                     viewport={{ once: true }}
                     className="space-y-4"
                 >
-                    <h1 className="text-2xl font-bold">The BlueOrbit</h1>
+                    <h1 className="text-2xl font-bold">The Stake-hawk</h1>
                     <p className="text-sm">Your Vision is Our Mission</p>
                     <div className="flex gap-3 pt-2">
                         <button className="p-2 border border-white rounded hover:bg-blue-700 hover:text-white transition">
@@ -74,10 +74,10 @@ const Footer = () => {
                 >
                     <h2 className="text-lg font-bold mb-3 border-b border-gray-500 w-max">Contact Us</h2>
                     <ul className="space-y-3 text-sm">
-                        <li className="flex items-start gap-2"><MapPin size={16} /> 1309 Coffeen Ave, Suite Sheridan, WY, 82801</li>
-                        <li className="flex items-start gap-2"><MapPin size={16} /> 639 Iscon Emporio, Satellite, Ahmedabad-380015</li>
+                        {/* <li className="flex items-start gap-2"><MapPin size={16} /> 1309 Coffeen Ave, Suite Sheridan, WY, 82801</li> */}
+                        <li className="flex items-start gap-2"><MapPin size={16} /> 202N, STE R, BRANCHBURG, NJ 08876, USA</li>
                         <li className="flex items-center gap-2"><PhoneCall size={16} /> +1 307-309-2505</li>
-                        <li className="flex items-center gap-2"><Mail size={16} /> info@vision-xperts.com</li>
+                        <li className="flex items-center gap-2"><Mail size={16} /> hello@stake-hawk.com</li>
                     </ul>
                     {/* <button className="mt-5 bg-indigo-600 hover:bg-indigo-700 transition text-white px-6 py-2 rounded font-semibold">
                         Book A Call →
@@ -94,7 +94,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="bg-blue-600 text-white text-center mt-10 py-10 flex flex-col md:flex-row justify-between items-center px-5 md:px-10 text-sm"
             >
-                <p>© All Copyright 2024 by The BlueOrbit </p>
+                <p>© All Copyright 2024 by The Stake-hawk </p>
                 <div className="space-x-5 mt-2 md:mt-0">
                     <a href="#" className="hover:underline">Terms & Condition</a>
                     <a href="#" className="hover:underline">Privacy Policy</a>

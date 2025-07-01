@@ -12,9 +12,9 @@ const Header = () => {
 
     return (
         <nav className="bg-white text-black md:px-20 px-7 fixed w-full  top-0 z-50 shadow-2xl">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between ">
                 <Link to={"/"} className="w-20">
-                    <img src="./logo.png" alt="" className='md:w-24 w-20 ' />
+                    <img src="./logo.png" alt="" className='md:w-full w-20 ' />
                 </Link>
 
                 {/* Desktop nav */}
@@ -23,7 +23,8 @@ const Header = () => {
                     <Link to={"/about"} className="cursor-pointer capitalize  hover:text-blue-700">About</Link>
                     <Link to={"/services"} className="cursor-pointer capitalize  hover:text-blue-700">services</Link>
                     <Link to={"/specialist"} className="relative group cursor-pointer  hover:text-blue-700">
-                        <span className="flex justify-center items-center gap-2"> Specialist <ChevronDown /></span>                        <ul className="absolute left-0 mt-2 w-64 bg-white text-black rounded-md shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-y-1 z-10 text-md">
+                        <span className="flex justify-center items-center gap-2"> Specialist <ChevronDown /></span>
+                        <ul className="absolute left-0 mt-2 w-64 bg-white text-black rounded-md shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-y-1 z-10 text-md">
                             <li className="px-4 py-2 hover:bg-blue-700 hover:text-white capitalize">resume revamp</li>
                             <li className="px-4 py-2 hover:bg-blue-700 hover:text-white capitalize">profile optimazation</li>
                             <li className="px-4 py-2 hover:bg-blue-700 hover:text-white capitalize">job application </li>
