@@ -32,7 +32,7 @@ app.post("/api/send-email", async (req, res) => {
         const mailOptions = {
             from: process.env.EMAIL_USER,
             to: process.env.RECEIVER_EMAIL, // your receiving email
-            subject: "New Contact Form Submission",
+            subject: "New Contact Form Submission from Website",
             html: `
         <h2>New Message From Contact Form</h2>
         <p><strong>Name:</strong> ${name}</p>

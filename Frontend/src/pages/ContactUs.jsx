@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import Footer from "../components/Footer";
-import axios from "axios"
+import axios from "axios";
 import Loader from "../components/Loader";
-
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,14 +16,27 @@ const ContactForm = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false); // <-- NEW
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 4400);
+    return () => clearTimeout(timeout);
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitting(true); // Disable the button and show loading
+
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/send-email`, formData)
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_BASE_URL}/api/send-email`,
+        formData
+      );
       alert(res.data.message);
       setFormData({
         name: "",
@@ -35,24 +47,19 @@ const ContactForm = () => {
         location: "",
         message: "",
       });
-
     } catch (error) {
-      alert(error.message)
+      alert(error.message);
+    } finally {
+      setSubmitting(false); // Enable the button again
     }
   };
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 4400);
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <>
-
-      {loading ? <Loader /> : (
-        <div className="">
+      {loading ? (
+        <Loader />
+      ) : (
+        <div>
           <div
             className="w-full h-[70vh] bg-cover bg-center relative flex items-center justify-center mt-20"
             style={{ backgroundImage: `url('./about.jpeg')` }}
@@ -69,7 +76,6 @@ const ContactForm = () => {
           </div>
 
           <div className="flex flex-col md:flex-row min-h-screen bg-white justify-center items-center md:my-10 my-5">
-
             {/* Left Section */}
             <motion.div
               initial={{ x: -100, opacity: 0 }}
@@ -188,18 +194,17 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="bg-blue-700 text-white px-6 py-3 rounded-xl hover:bg-blue-800 transition duration-300 w-full md:w-fit"
+                disabled={submitting}
+                className={`bg-blue-700 text-white px-6 py-3 rounded-xl w-full md:w-fit transition duration-300 ${submitting ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-800"
+                  }`}
               >
-                Contact Us
+                {submitting ? "Sending..." : "Contact Us"}
               </button>
             </motion.form>
           </div>
           <Footer />
         </div>
-
       )}
-
-
     </>
   );
 };

@@ -1,5 +1,5 @@
 
-import { ArrowUp, Instagram, Linkedin, Mail, PhoneCall, MapPin } from 'lucide-react';
+import { ArrowUp, Instagram, Linkedin, Mail, PhoneCall, MapPin, Youtube } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -36,12 +36,27 @@ const Footer = () => {
                     <h1 className="text-2xl font-bold">The Stake-hawk</h1>
                     <p className="text-sm">Your Vision is Our Mission</p>
                     <div className="flex gap-3 pt-2">
-                        <button className="p-2 border border-white rounded hover:bg-blue-700 hover:text-white transition">
+                        <a
+                            href="https://www.instagram.com/stakehawksolutions?igsh=MTN1c2d1N3lvMHI2bg%3D%3D&utm_source=qr"
+                            target="_blank"
+                            className="p-2 border border-white rounded text-white transition-all duration-300
+             hover:text-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:opacity-90"
+                        >
                             <Instagram size={20} />
-                        </button>
-                        <button className="p-2 border border-white rounded hover:bg-blue-700 hover:text-white transition">
+                        </a>
+
+                        <a href='https://www.linkedin.com/company/107722979/admin/analytics/updates/' target='_blank' className="p-2 border border-white rounded hover:bg-blue-700 hover:text-white transition">
                             <Linkedin size={20} />
-                        </button>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/channel/UCegCQfOXd2vRqsfvfK7PVuw"
+                            target="_blank"
+                            className="p-2 border border-white rounded text-white transition-all duration-300
+             hover:bg-red-700 hover:text-white"
+                        >
+                            <Youtube size={20} />
+                        </a>
+
                     </div>
                 </motion.div>
 
