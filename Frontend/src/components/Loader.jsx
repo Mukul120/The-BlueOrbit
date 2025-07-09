@@ -66,7 +66,7 @@ function Loader({ onComplete }) {
                         transition={{ delay: 1, duration: 0.8 }}
                         className="text-lg sm:text-2xl tracking-widest font-bold text-blue-700 text-center"
                     >
-                        The Stack-hawk
+                        The Stake-hawk
                     </motion.p>
                 </motion.div>
             )}

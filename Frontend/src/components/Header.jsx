@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Twitter, X, } from 'lucide-react';
+import { ChevronDown, Facebook, FacebookIcon, Instagram, Linkedin, Menu, Twitter, X, Youtube, } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -147,12 +147,24 @@ const Header = () => {
                                 Contact Us
                             </Link>
 
-                            <div className="flex justify-between items-center pt-6">
-                                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
-                                    <button key={index} className="hover:bg-blue-700 p-2 rounded-full hover:text-white">
-                                        <Icon size={20} />
-                                    </button>
-                                ))}
+                            <div className="flex justify-between items-start    pt-6">
+
+                                <a href="https://www.instagram.com/stakehawksolutions?igsh=MTN1c2d1N3lvMHI2bg%3D%3D&utm_source=qr"
+                                    target="_blank"
+                                     className="hover:bg-blue-700 p-2 rounded-full hover:text-white">
+                                    <Instagram size={25} />
+                                </a>
+                                <a href="https://www.instagram.com/stakehawksolutions?igsh=MTN1c2d1N3lvMHI2bg%3D%3D&utm_source=qr"
+                                    target="_blank"
+                                     className="hover:bg-blue-700 p-2 rounded-full hover:text-white">
+                                    <Linkedin size={25} />
+                                </a>
+                                <a href="https://www.instagram.com/stakehawksolutions?igsh=MTN1c2d1N3lvMHI2bg%3D%3D&utm_source=qr"
+                                    target="_blank"
+                                     className="hover:bg-blue-700 p-2 rounded-full hover:text-white">
+                                    <Youtube size={25} />
+                                </a>
+
                             </div>
                         </ul>
                     </motion.div>

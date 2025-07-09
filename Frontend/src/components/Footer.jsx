@@ -90,8 +90,8 @@ const Footer = () => {
                     <h2 className="text-lg font-bold mb-3 border-b border-gray-500 w-max">Contact Us</h2>
                     <ul className="space-y-3 text-sm">
                         {/* <li className="flex items-start gap-2"><MapPin size={16} /> 1309 Coffeen Ave, Suite Sheridan, WY, 82801</li> */}
-                        <li className="flex items-start gap-2"><MapPin size={16} /> 202N, STE R, BRANCHBURG, NJ 08876, USA</li>
-                        <li className="flex items-center gap-2"><PhoneCall size={16} /> +1 307-309-2505</li>
+                        <li className="flex items-start gap-2"><MapPin size={16} /> 971 US HIGHWAY 202N, STE R, BRANCHBURG, NJ 08876, USA</li>
+                        <li className="flex items-center gap-2"><PhoneCall size={16} /> +1 875-280-1369</li>
                         <li className="flex items-center gap-2"><Mail size={16} /> hello@stake-hawk.com</li>
                     </ul>
                     {/* <button className="mt-5 bg-indigo-600 hover:bg-indigo-700 transition text-white px-6 py-2 rounded font-semibold">
