@@ -178,17 +178,19 @@ const Home = () => {
     },
     {
       id: 2,
-      role: "Co-founder",
-      name: "Mohil vakshya, Vivek Gajera",
-      description1: "Empowering teams, crafting business success.",
-      description2: "Inspiring excellence, fostering team empowerment."
-    },
-    {
-      id: 3,
+
+
       role: "Managing Director",
       name: "Harshil Pethani",
       description1: "Guiding growth, delivering exceptional results.",
       description2: "Leading operations, ensuring business excellence."
+    },
+    {
+      id: 3,
+      role: "Co-founder",
+      name: "Mohil vakshya, Vivek Gajera",
+      description1: "Empowering teams, crafting business success.",
+      description2: "Inspiring excellence, fostering team empowerment.",
     }
   ];
 

@@ -94,11 +94,16 @@ const members = [
     name: "Parth Raval",
     role: "Founder"
   },
-  // {
-  //   img: "./mn.jpeg",
-  //   name: "Parth Raval",
-  //   role: "Founder"
-  // },
+  {
+    img: "./mn.jpeg",
+    name: "Harshil pethani",
+    role: "Managing Director"
+  },
+  {
+    img: "./mn.jpeg",
+    name: "Mohil vakshya, Vivek Gajera",
+    role: "co-Founder"
+  },
 ]
 
 
