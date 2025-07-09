@@ -109,7 +109,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="bg-blue-600 text-white text-center mt-10 py-10 flex flex-col md:flex-row justify-between items-center px-5 md:px-10 text-sm"
             >
-                <p>© All Copyright 2024 by The Stake-hawk </p>
+                <p>© All Copyright 2025 by The Stake-hawk </p>
                 <div className="space-x-5 mt-2 md:mt-0">
                     <a href="#" className="hover:underline">Terms & Condition</a>
                     <a href="#" className="hover:underline">Privacy Policy</a>
