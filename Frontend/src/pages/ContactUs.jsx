@@ -84,26 +84,26 @@ const ContactForm = () => {
               className="w-full md:w-1/2 text-white p-8 space-y-6 flex flex-col justify-center"
             >
               <div className="space-y-7 bg-blue-700 p-10 rounded-xl">
-                <div>
+                <div className="flex justify-start gap-3 items-center">
                   <p className="text-2xl font-semibold flex gap-3 items-center capitalize">
                     <Phone className="w-15 p-2 border text-black bg-white h-15 rounded-full" /> Call Us
                   </p>
                   <p className="text-lg">+1 307-309-2505</p>
                 </div>
                 <hr />
-                <div>
+                <div className="flex justify-start gap-3 items-center">
                   <p className="text-xl font-semibold flex gap-3 items-center capitalize">
                     <Mail className="w-15 p-2 border text-black bg-white h-15 rounded-full" /> Email
                   </p>
-                  <p className="text-lg">Info@Vision-Xperts.Com</p>
+                  <p className="text-lg text-center">hello@stake-hawk.com</p>
                 </div>
                 <hr />
-                <div>
+                <div className="flex justify-start gap-3 items-center">
                   <p className="text-xl font-semibold flex items-center gap-3">
                     <MapPin className="w-15 p-2 border text-black bg-white h-15 rounded-full" /> Location
                   </p>
-                  <p>1309 Coffeen Ave, WY, 82801</p>
-                  <p>639 Escon Emporio, Satellite, AMD - 380015</p>
+                  <p>971 US HIGHWAY 202N, STE R, BRANCHBURG, NJ 08876, USA</p>
+
                 </div>
               </div>
             </motion.div>

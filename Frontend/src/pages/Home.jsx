@@ -171,7 +171,7 @@ const Home = () => {
   const teamMembers = [
     {
       id: 1,
-      role: "Founder",
+      role: "Founder & Managing Director",
       name: "Parth Raval",
       description1: "Pioneering excellence, guiding strategic vision.",
       description2: "Empowering through innovation, driving success."
@@ -180,7 +180,7 @@ const Home = () => {
       id: 2,
 
 
-      role: "Managing Director",
+      role: "MM",
       name: "Harshil Pethani",
       description1: "Guiding growth, delivering exceptional results.",
       description2: "Leading operations, ensuring business excellence."
@@ -188,7 +188,7 @@ const Home = () => {
     {
       id: 3,
       role: "Co-founder",
-      name: "Mohil vakshya, Vivek Gajera",
+      name: "Mohil Vaghasiya, Vivek Gajera",
       description1: "Empowering teams, crafting business success.",
       description2: "Inspiring excellence, fostering team empowerment.",
     }

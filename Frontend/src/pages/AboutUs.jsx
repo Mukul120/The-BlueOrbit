@@ -97,11 +97,11 @@ const members = [
   {
     img: "./mn.jpeg",
     name: "Harshil pethani",
-    role: "Managing Director"
+    role: "MM"
   },
   {
     img: "./mn.jpeg",
-    name: "Mohil vakshya, Vivek Gajera",
+    name: "Mohil vaghasiya, Vivek Gajera",
     role: "co-Founder"
   },
 ]
